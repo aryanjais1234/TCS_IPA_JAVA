@@ -115,7 +115,7 @@ public class Solution
 
     public static TravelAgencies agencyDetailsForGivenIdandType(TravelAgencies[] arr, int regNo, String packageType){
         for(int i=0; i<arr.length; i++){
-            if(arr[i].getFlightFacility() && arr[i].getRegNo()==regNo && arr[i].getPackageType()==packageType){
+            if(arr[i].getFlightFacility() && arr[i].getRegNo()==regNo && arr[i].getPackageType().equalsIgnoreCase(packageType)){
                 return arr[i];
             }
         }
